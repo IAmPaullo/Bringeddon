@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     Rigidbody rb;
     [SerializeField] float speed;
     [SerializeField] float maxDist;
+    int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,15 @@ public class Projectile : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.transform.CompareTag("Enemy"))
+        {
+            collision.transform.GetComponent<Enemy>().ReceiveDamage(damage);
+        }
         Destroy(gameObject);
+    }
+
+    public void SetDamage(int _dmg)
+    {
+        damage = _dmg;
     }
 }

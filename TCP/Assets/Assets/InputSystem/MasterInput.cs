@@ -163,6 +163,33 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Object Holder Scene"",
+            ""id"": ""1f63d975-ef20-4c56-b2cf-075de7996afd"",
+            ""actions"": [
+                {
+                    ""name"": ""Rotate"",
+                    ""type"": ""Value"",
+                    ""id"": ""b88b0775-e1f6-44b2-8d65-e6f3433ef48b"",
+                    ""expectedControlType"": ""Stick"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ace0d7a9-a5d7-414d-9590-f9b7f052a47d"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -190,6 +217,9 @@ public class @MasterInput : IInputActionCollection, IDisposable
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        // Object Holder Scene
+        m_ObjectHolderScene = asset.FindActionMap("Object Holder Scene", throwIfNotFound: true);
+        m_ObjectHolderScene_Rotate = m_ObjectHolderScene.FindAction("Rotate", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -292,6 +322,39 @@ public class @MasterInput : IInputActionCollection, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Object Holder Scene
+    private readonly InputActionMap m_ObjectHolderScene;
+    private IObjectHolderSceneActions m_ObjectHolderSceneActionsCallbackInterface;
+    private readonly InputAction m_ObjectHolderScene_Rotate;
+    public struct ObjectHolderSceneActions
+    {
+        private @MasterInput m_Wrapper;
+        public ObjectHolderSceneActions(@MasterInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Rotate => m_Wrapper.m_ObjectHolderScene_Rotate;
+        public InputActionMap Get() { return m_Wrapper.m_ObjectHolderScene; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ObjectHolderSceneActions set) { return set.Get(); }
+        public void SetCallbacks(IObjectHolderSceneActions instance)
+        {
+            if (m_Wrapper.m_ObjectHolderSceneActionsCallbackInterface != null)
+            {
+                @Rotate.started -= m_Wrapper.m_ObjectHolderSceneActionsCallbackInterface.OnRotate;
+                @Rotate.performed -= m_Wrapper.m_ObjectHolderSceneActionsCallbackInterface.OnRotate;
+                @Rotate.canceled -= m_Wrapper.m_ObjectHolderSceneActionsCallbackInterface.OnRotate;
+            }
+            m_Wrapper.m_ObjectHolderSceneActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Rotate.started += instance.OnRotate;
+                @Rotate.performed += instance.OnRotate;
+                @Rotate.canceled += instance.OnRotate;
+            }
+        }
+    }
+    public ObjectHolderSceneActions @ObjectHolderScene => new ObjectHolderSceneActions(this);
     private int m_JoystickSchemeIndex = -1;
     public InputControlScheme JoystickScheme
     {
@@ -307,5 +370,9 @@ public class @MasterInput : IInputActionCollection, IDisposable
         void OnFire(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+    }
+    public interface IObjectHolderSceneActions
+    {
+        void OnRotate(InputAction.CallbackContext context);
     }
 }

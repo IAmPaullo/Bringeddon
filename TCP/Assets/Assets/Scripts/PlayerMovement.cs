@@ -22,11 +22,15 @@ public class PlayerMovement : MonoBehaviour
     Vector3 aim;
     [SerializeField] Vector3 dashPos;
     float nextDashTime;
+    Animator anim;
+
 
     [SerializeField] State state;
+    
 
     void Start()
     {
+        anim = meshObj.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         state = State.Idle;
         nextDashTime = Time.time;
@@ -38,7 +42,12 @@ public class PlayerMovement : MonoBehaviour
         switch (state)
         {
             case State.Idle:
+                rb.velocity = new Vector3(0,rb.velocity.y,0);
+                anim.SetBool("Walk",false);
+                break;
+            case State.Walk:
                 rb.velocity = velocity * moveSpeed * Time.deltaTime;
+                anim.SetBool("Walk",true);
                 break;
             case State.Dash:
                 if (Vector3.Distance(transform.position, dashPos) < 0.25f)
@@ -69,6 +78,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 inputVec = input.Get<Vector2>();
         velocity = new Vector3(inputVec.x, 0, inputVec.y);
+        if (state == State.Idle && inputVec != Vector2.zero)
+            state = State.Walk;
+        else if(inputVec == Vector2.zero && state == State.Walk)
+            state = State.Idle;
     }
 
     public void OnAim(InputValue input)
@@ -99,6 +112,6 @@ public class PlayerMovement : MonoBehaviour
     
     enum State
     {
-        Idle, Dash
+        Idle, Walk, Dash
     }
 }

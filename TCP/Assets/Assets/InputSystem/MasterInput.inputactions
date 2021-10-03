@@ -36,6 +36,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ChargeFire",
+                    "type": "Button",
+                    "id": "4fc39653-91e6-451e-9d1f-6a45ac4dd616",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -109,7 +117,7 @@
                     "name": "",
                     "id": "d91d063f-2cc3-4415-8ae2-a67be7bd7c96",
                     "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "Joystick",
                     "action": "Fire",
@@ -146,6 +154,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "834fca9d-79e4-4014-86c3-a36ec2a185fe",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "Hold(duration=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChargeFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

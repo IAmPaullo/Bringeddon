@@ -10,10 +10,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] Transform meshObj;
     [SerializeField] int damage;
     [SerializeField] int maxHealth;
+    Animator anim;
     int health;
     float nextFireTime;
     void Start()
     {
+        anim = meshObj.GetComponent<Animator>();
         nextFireTime = Time.time;
         health = maxHealth;
     }
@@ -42,8 +44,31 @@ public class PlayerAttack : MonoBehaviour
             Transform projectile = Instantiate(bulletPrefab, transform.position, Quaternion.identity).transform;
             projectile.forward = meshObj.forward;
             projectile.GetComponent<Projectile>().SetDamage(damage);
+            anim.SetTrigger("Shoot");
         }        
     }
+
+    void OnChargeFire()
+    {
+        Debug.Log("Charge");
+        if (nextFireTime <= Time.time)
+        {
+            nextFireTime = Time.time + 1 / (fireRate / 2);
+            Transform projectile = Instantiate(bulletPrefab, transform.position, Quaternion.identity).transform;
+            projectile.forward = (meshObj.forward).normalized;
+            projectile.GetComponent<Projectile>().SetDamage(damage);
+
+            projectile = Instantiate(bulletPrefab, transform.position, Quaternion.identity).transform;
+            projectile.forward = (meshObj.forward + meshObj.right).normalized;
+            projectile.GetComponent<Projectile>().SetDamage(damage);
+
+            projectile = Instantiate(bulletPrefab, transform.position, Quaternion.identity).transform;
+            projectile.forward = (meshObj.forward - meshObj.right).normalized;
+            projectile.GetComponent<Projectile>().SetDamage(damage);
+            anim.SetTrigger("Shoot");
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Attack"))

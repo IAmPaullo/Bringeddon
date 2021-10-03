@@ -116,12 +116,6 @@ public class Enemy : MonoBehaviour
         }
     }    
 
-    enum Status
-    {
-        Idle, Walk, Follow, ToAttack, Attacking,
-        Waiting, Dead
-    }
-
     public int GetDamage()
     {
         return damage;
@@ -136,5 +130,10 @@ public class Enemy : MonoBehaviour
             Debug.Log("Dead");
             status = Status.Dead;
         }
+    }
+    enum Status
+    {
+        Idle, Walk, Follow, ToAttack, Attacking,
+        Waiting, Dead
     }
 }

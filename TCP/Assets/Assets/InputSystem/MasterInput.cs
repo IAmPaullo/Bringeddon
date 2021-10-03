@@ -49,6 +49,14 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChargeFire"",
+                    ""type"": ""Button"",
+                    ""id"": ""4fc39653-91e6-451e-9d1f-6a45ac4dd616"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -122,7 +130,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""d91d063f-2cc3-4415-8ae2-a67be7bd7c96"",
                     ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
                     ""action"": ""Fire"",
@@ -161,6 +169,17 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""834fca9d-79e4-4014-86c3-a36ec2a185fe"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": ""Hold(duration=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChargeFire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -190,6 +209,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        m_Player_ChargeFire = m_Player.FindAction("ChargeFire", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -243,6 +263,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_Aim;
     private readonly InputAction m_Player_Dash;
+    private readonly InputAction m_Player_ChargeFire;
     public struct PlayerActions
     {
         private @MasterInput m_Wrapper;
@@ -251,6 +272,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
         public InputAction @Aim => m_Wrapper.m_Player_Aim;
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
+        public InputAction @ChargeFire => m_Wrapper.m_Player_ChargeFire;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -272,6 +294,9 @@ public class @MasterInput : IInputActionCollection, IDisposable
                 @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @ChargeFire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChargeFire;
+                @ChargeFire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChargeFire;
+                @ChargeFire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChargeFire;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -288,6 +313,9 @@ public class @MasterInput : IInputActionCollection, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @ChargeFire.started += instance.OnChargeFire;
+                @ChargeFire.performed += instance.OnChargeFire;
+                @ChargeFire.canceled += instance.OnChargeFire;
             }
         }
     }
@@ -307,5 +335,6 @@ public class @MasterInput : IInputActionCollection, IDisposable
         void OnFire(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnChargeFire(InputAction.CallbackContext context);
     }
 }

@@ -1,21 +1,26 @@
 fileFormatVersion: 2
-guid: c6798db278c57464aae98b49a5009466
+guid: 9618847309364384db839d2af665ebde
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 5939378792394435379
-    second: Ana|Death
+      74: 4723146814002874508
+    second: Armature|Attack
   - first:
-      74: -2905467438404758219
-    second: Ana|Idle
+      74: -982115091633673366
+    second: Armature|Death
   - first:
-      74: -1749104502052997333
-    second: Ana|Shoot
+      74: 8349542763059015795
+    second: Armature|Walk
   - first:
-      74: -536992183317162381
-    second: Ana|Walk
-  externalObjects: {}
+      74: -8945691123924629249
+    second: Armature|Idle
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corpo
+    second: {fileID: 2100000, guid: 9b4060d980df0464c801c8995fb64848, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -44,11 +49,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Ana|Death
-      takeName: Ana|Death
+      name: Armature|Attack
+      takeName: Armature|Attack
       internalID: 0
       firstFrame: 0
-      lastFrame: 44
+      lastFrame: 10
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -73,11 +78,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Ana|Idle
-      takeName: Ana|Idle
+      name: Armature|Death
+      takeName: Armature|Death
       internalID: 0
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 13
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -102,40 +107,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Ana|Shoot
-      takeName: Ana|Shoot
+      name: Armature|Walk
+      takeName: Armature|Walk
       internalID: 0
       firstFrame: 0
-      lastFrame: 9
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Ana|Walk
-      takeName: Ana|Walk
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 49
+      lastFrame: 25
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -143,6 +119,35 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Walk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

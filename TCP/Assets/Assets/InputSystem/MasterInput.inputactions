@@ -169,6 +169,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Object Holder Scene",
+            "id": "1f63d975-ef20-4c56-b2cf-075de7996afd",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "b88b0775-e1f6-44b2-8d65-e6f3433ef48b",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ace0d7a9-a5d7-414d-9590-f9b7f052a47d",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

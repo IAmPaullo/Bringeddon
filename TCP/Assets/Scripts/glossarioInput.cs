@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Sprites/glossário/glossarioInput.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/glossarioInput.inputactions'
 
 using System;
 using System.Collections;

@@ -28,6 +28,10 @@ public class Projectile : MonoBehaviour
         if (collision.transform.CompareTag("Enemy"))
         {
             collision.transform.GetComponent<Enemy>().ReceiveDamage(damage);
+        } 
+        else if (collision.transform.CompareTag("Tower"))
+        {
+            collision.transform.GetComponent<Tower>().ReceiveDamage(damage);
         }
         Destroy(gameObject);
     }

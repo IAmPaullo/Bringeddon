@@ -5,13 +5,13 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
-public class objMove : MonoBehaviour
+public class ObjMove : MonoBehaviour
 {
     [SerializeField] GlossarioInput glossarioInputActions;
     [SerializeField] RotateMode rotMode;
     [SerializeField] ObjectHolder objHolder;
     [SerializeField] float speed;
-    [SerializeField] Transform cameraPos;
+    public Transform cameraPos;
     [SerializeField] SceneHandler sm;
     Vector3 rot;
     Transform objSelected;
@@ -26,7 +26,7 @@ public class objMove : MonoBehaviour
 
     private void Update()
     {
-        cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+        //cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, objSelected.position.z - 3);
     }
 
     public void OnRotate(InputValue input)
@@ -34,31 +34,21 @@ public class objMove : MonoBehaviour
 
         Vector3 inputVector = input.Get<Vector2>();
         rot = inputVector;
-
-        //objSelected.Rotate(new Vector3(0, rot.x * speed , rot.y * speed ));
-
         objSelected.DORotate(new Vector2(-rot.y * speed, -rot.x * speed), Time.deltaTime, rotMode);
-
-        //objSelected.DORotate(new Vector2(rot.y * speed * Time.deltaTime, rot.x * speed * Time.deltaTime),
-        //    speed * Time.deltaTime, rotMode);
 
     }
 
     public void OnNext()
     {
-        try
-        {
-            c++;
-            objSelected = objHolder.AllObjects[c].transform;
-        }
-        catch (System.Exception)
-        {
 
-            
-            throw;
-        }
-            
-        
+        c++;
+        objSelected = objHolder.AllObjects[c].transform;
+        cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+
+
+        Debug.Log("aaaaaaaaaaa");
+
+
 
     }
 
@@ -68,6 +58,7 @@ public class objMove : MonoBehaviour
         {
             c--;
             objSelected = objHolder.AllObjects[c].transform;
+            cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
         }
 
         if (c < 0 || c > objHolder.AllObjects.Length)

@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Paullo.unity
+    guid: e310138ee0e80bc4b94c5236c95a7a3b
+  - enabled: 1
+    path: Assets/Scenes/ObjectHolder.unity
+    guid: d6c1787272a115d42aed1d42ec2e2451
   m_configObjects: {}

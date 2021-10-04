@@ -15,6 +15,18 @@ ModelImporter:
   - first:
       74: -8945691123924629249
     second: Armature|Idle
+  - first:
+      74: 5665052574348218019
+    second: Jomaluco|Attack
+  - first:
+      74: -6660161370005542431
+    second: Jomaluco|Death
+  - first:
+      74: 5526312950099985168
+    second: Jomaluco|Walk
+  - first:
+      74: 5331279648394416117
+    second: Jomaluco|Idle
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -49,8 +61,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Attack
-      takeName: Armature|Attack
+      name: Jomaluco|Attack
+      takeName: Jomaluco|Attack
       internalID: 0
       firstFrame: 0
       lastFrame: 10
@@ -78,8 +90,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Death
-      takeName: Armature|Death
+      name: Jomaluco|Death
+      takeName: Jomaluco|Death
       internalID: 0
       firstFrame: 0
       lastFrame: 13
@@ -107,8 +119,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Walk
-      takeName: Armature|Walk
+      name: Jomaluco|Walk
+      takeName: Jomaluco|Walk
       internalID: 0
       firstFrame: 0
       lastFrame: 25
@@ -136,8 +148,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Idle
-      takeName: Armature|Walk
+      name: Jomaluco|Idle
+      takeName: Jomaluco|Walk
       internalID: 0
       firstFrame: 0
       lastFrame: 0

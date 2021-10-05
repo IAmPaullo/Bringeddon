@@ -21,7 +21,7 @@ public class ObjMove : MonoBehaviour
     private void Start()
     {
         objSelected = objHolder.AllObjects[c].transform;
-        cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+        cameraPos.position = new Vector3(objSelected.position.x, cameraPos.position.y, cameraPos.position.z);
     }
 
     private void Update()
@@ -34,19 +34,32 @@ public class ObjMove : MonoBehaviour
 
         Vector3 inputVector = input.Get<Vector2>();
         rot = inputVector;
-        objSelected.DORotate(new Vector2(-rot.y * speed, -rot.x * speed), Time.deltaTime, rotMode);
+        objSelected.DORotate(new Vector2(0, -rot.x * speed), Time.deltaTime, rotMode);
+       
 
     }
 
     public void OnNext()
     {
 
-        c++;
-        objSelected = objHolder.AllObjects[c].transform;
-        cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+        
 
 
-        Debug.Log("aaaaaaaaaaa");
+        try
+        {
+            c++;
+            objSelected = objHolder.AllObjects[c].transform;
+            cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+
+        }
+        catch (System.Exception)
+        {
+
+            Debug.Log("ඞඞඞඞඞඞ");
+            c = 0;
+            objSelected = objHolder.AllObjects[c].transform;
+            cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+        }
 
 
 

@@ -15,9 +15,14 @@ ModelImporter:
   - first:
       74: -536992183317162381
     second: Ana|Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ana_mat
+    second: {fileID: 2100000, guid: 6d00217f4e302634e8d276bea4633c97, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1

@@ -9,7 +9,12 @@ ModelImporter:
   - first:
       74: -7642053849043063447
     second: Carlinhos|Idle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carlinhos_MAT
+    second: {fileID: 2100000, guid: 8af050f8af7681140ac62d97f3e5b42e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

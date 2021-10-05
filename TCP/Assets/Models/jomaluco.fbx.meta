@@ -34,7 +34,7 @@ ModelImporter:
       name: corpo
     second: {fileID: 2100000, guid: 9b4060d980df0464c801c8995fb64848, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1

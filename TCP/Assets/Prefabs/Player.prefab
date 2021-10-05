@@ -90,13 +90,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7721456428615012019}
-  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: 7, z: -6}
+  m_LocalRotation: {x: 0.30712003, y: -0, z: -0, w: 0.95167077}
+  m_LocalPosition: {x: 0, y: 7.56, z: -7.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7721456429331681579}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.772003, y: 0, z: 0}
 --- !u!20 &7721456428615012029
 Camera:
   m_ObjectHideFlags: 0
@@ -176,9 +176,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7721456429331681580}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2, y: 0, z: -20.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 6260189942880700555}
   - {fileID: 7721456428615012028}
@@ -262,7 +262,7 @@ MonoBehaviour:
   fireRate: 1
   bulletPrefab: {fileID: 3076916955995417268, guid: f73b9d0df8e81ff4eabd7dccce1565d8,
     type: 3}
-  gun: {fileID: 0}
+  gun: {fileID: 8415461784456599976}
   meshObj: {fileID: 6260189942880700555}
   damage: 1
   maxHealth: 3
@@ -278,11 +278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d45aa022cb6bb4e95237f005128300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 200
+  moveSpeed: 80
   rotationSpeed: 100
   dashSpeed: 400
   dashCooldown: 4
-  dashDist: 4
+  dashDist: 2
   meshObj: {fileID: 6260189942880700555}
   dashPos: {x: 0, y: 0, z: 0}
   state: 0

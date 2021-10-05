@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3780c525a51d044f98d98be9125b6ba, type: 3}
-  m_Name: Walk
+  m_Name: JomalucoDano
   m_EditorClassIdentifier: 
-  name: 
-  clip: {fileID: 0}
+  clipName: JomalucoAtaque
+  clip: {fileID: 8300000, guid: 0a21145ef24d0184dba7af71f6a253f7, type: 3}
   loop: 0
-  volume: 0
+  volume: 1

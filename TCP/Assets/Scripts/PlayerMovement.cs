@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
                 dashPos = dir * dashDist + transform.position;
-
+            AudioManager.Play("AnaDash");
             state = State.Dash;
         }
     }

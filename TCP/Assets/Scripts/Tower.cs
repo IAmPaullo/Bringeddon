@@ -43,7 +43,7 @@ public class Tower : MonoBehaviour
             case Status.Locking:
                 anim.SetBool("Lock", true);
                 Vector3 look = (target - transform.position).normalized;
-                transform.LookAt(new Vector3(look.x,transform.position.y, look.z)+transform.position);
+                transform.LookAt(new Vector3(look.x,0, look.z)+transform.position);
                 target = player.position;
                 if (Vector3.Distance(transform.position, player.position) > range)
                 {

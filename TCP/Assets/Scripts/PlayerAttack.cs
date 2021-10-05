@@ -29,10 +29,11 @@ public class PlayerAttack : MonoBehaviour
     {
         Debug.Log("Hit");
         health -= value;
-        if(health<= 0)
+        AudioManager.Play("AnaDano");
+        if (health<= 0)
         {
             health = 0;
-            Debug.Log("Dead");
+            anim.SetTrigger("Death");
             GetComponent<PlayerInput>().enabled = false;
         }
     }
@@ -46,6 +47,7 @@ public class PlayerAttack : MonoBehaviour
             projectile.forward = meshObj.forward;
             projectile.GetComponent<Projectile>().SetDamage(damage);
             anim.SetTrigger("Shoot");
+            AudioManager.Play("AnaTiro");
         }        
     }
 
@@ -67,6 +69,7 @@ public class PlayerAttack : MonoBehaviour
             projectile.forward = (meshObj.forward - meshObj.right).normalized;
             projectile.GetComponent<Projectile>().SetDamage(damage);
             anim.SetTrigger("Shoot");
+            AudioManager.Play("AnaTiro");
         }
     }
 
@@ -75,7 +78,7 @@ public class PlayerAttack : MonoBehaviour
         if (other.CompareTag("Attack"))
         {
             other.enabled = false;
-            ReceiveDamage(other.GetComponentInParent<Enemy>().GetDamage());   
+            ReceiveDamage(other.GetComponentInParent<Enemy>().GetDamage());
         }
     }
 }

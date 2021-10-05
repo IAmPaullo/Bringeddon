@@ -69,7 +69,7 @@ public class Enemy : MonoBehaviour
                 break;
             case Status.Follow:
                 anim.SetBool("Walk", true);
-                target = player.position + (transform.position - player.position).normalized;
+                target = player.position;
                 if (Vector3.Distance(transform.position, player.position) > perception)
                 {
                     status = Status.Idle;

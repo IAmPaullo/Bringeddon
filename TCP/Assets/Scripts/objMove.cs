@@ -10,7 +10,9 @@ public class ObjMove : MonoBehaviour
     [SerializeField] GlossarioInput glossarioInputActions;
     [SerializeField] RotateMode rotMode;
     [SerializeField] ObjectHolder objHolder;
-    [SerializeField] float speed;
+    [SerializeField] float degrees = 360f;
+    [SerializeField] float speed = 10f;
+    [SerializeField] FillTextInfo textInfo;
     public Transform cameraPos;
     [SerializeField] SceneHandler sm;
     Vector3 rot;
@@ -21,35 +23,23 @@ public class ObjMove : MonoBehaviour
     private void Start()
     {
         objSelected = objHolder.AllObjects[c].transform;
-        cameraPos.position = new Vector3(objSelected.position.x, cameraPos.position.y, cameraPos.position.z);
+        cameraPos.position = new Vector3(objSelected.position.x - 1, cameraPos.position.y, cameraPos.position.z);
     }
 
     private void Update()
     {
-        //cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, objSelected.position.z - 3);
-    }
-
-    public void OnRotate(InputValue input)
-    {
-
-        Vector3 inputVector = input.Get<Vector2>();
-        rot = inputVector;
-        objSelected.DORotate(new Vector2(0, -rot.x * speed), Time.deltaTime, rotMode);
-       
-
+        objSelected.Rotate(new Vector2(0, degrees), speed * Time.deltaTime);
     }
 
     public void OnNext()
     {
 
-        
-
-
         try
         {
             c++;
             objSelected = objHolder.AllObjects[c].transform;
-            cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+            cameraPos.position = new Vector3(objSelected.position.x - 1, cameraPos.position.y, cameraPos.position.z);
+            objSelected.GetComponent<FillTextInfo>().ChangeDesc();
 
         }
         catch (System.Exception)
@@ -58,11 +48,8 @@ public class ObjMove : MonoBehaviour
             Debug.Log("ඞඞඞඞඞඞ");
             c = 0;
             objSelected = objHolder.AllObjects[c].transform;
-            cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+            cameraPos.position = new Vector3(objSelected.position.x -1, cameraPos.position.y, cameraPos.position.z);
         }
-
-
-
     }
 
     public void OnBack()
@@ -71,7 +58,8 @@ public class ObjMove : MonoBehaviour
         {
             c--;
             objSelected = objHolder.AllObjects[c].transform;
-            cameraPos.position = new Vector3(objSelected.position.x, objSelected.position.y, cameraPos.position.z);
+            cameraPos.position = new Vector3(objSelected.position.x - 1, cameraPos.position.y, cameraPos.position.z);
+            objSelected.GetComponent<FillTextInfo>().ChangeDesc();
         }
 
         if (c < 0 || c > objHolder.AllObjects.Length)

@@ -137,6 +137,8 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
+            GetComponent<Collider>().enabled = false;
+            attackCollider.enabled = false;
             Debug.Log("Dead");
             status = Status.Dead;
         }

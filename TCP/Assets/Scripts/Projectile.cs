@@ -33,6 +33,10 @@ public class Projectile : MonoBehaviour
         {
             collision.transform.GetComponent<Tower>().ReceiveDamage(damage);
         }
+        else if (collision.transform.CompareTag("Boss"))
+        {
+            collision.transform.GetComponent<Carlinhos>().ReceiveDamage(damage);
+        }
         Destroy(gameObject);
     }
 

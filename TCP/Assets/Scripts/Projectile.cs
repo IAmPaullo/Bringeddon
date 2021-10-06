@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float speed;
+    [SerializeField] float speed, force, radius;
     [SerializeField] float maxDist;
     int damage;
     // Start is called before the first frame update
@@ -36,6 +36,10 @@ public class Projectile : MonoBehaviour
         else if (collision.transform.CompareTag("Boss"))
         {
             collision.transform.GetComponent<Carlinhos>().ReceiveDamage(damage);
+        }else if (collision.transform.CompareTag("Dice"))
+        {
+            collision.transform.GetComponent<Rigidbody>().AddExplosionForce(force, collision.transform.position, radius
+                , .3f, ForceMode.Impulse);
         }
         Destroy(gameObject);
     }

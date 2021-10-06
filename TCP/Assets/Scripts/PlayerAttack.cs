@@ -11,14 +11,16 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] Transform meshObj;
     [SerializeField] int damage;
     [SerializeField] int maxHealth;
+    [SerializeField] HPManager hpManager;
     Animator anim;
-    int health;
+    public int health;
     float nextFireTime;
     void Start()
     {
         anim = meshObj.GetComponent<Animator>();
         nextFireTime = Time.time;
         health = maxHealth;
+        hpManager.Fill(maxHealth);
     }
 
     void Update()
@@ -30,12 +32,14 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log("Hit");
         health -= value;
         AudioManager.Play("AnaDano");
+        //hpManager.RemoveIcon();
         if (health<= 0)
         {
             health = 0;
             anim.SetTrigger("Death");
             GetComponent<PlayerInput>().enabled = false;
         }
+        
     }
 
     void OnFire()

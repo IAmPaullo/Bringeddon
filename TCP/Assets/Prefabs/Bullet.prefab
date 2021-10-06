@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
+  force: 5
+  radius: 5
   maxDist: 20
 --- !u!33 &982540525301747824
 MeshFilter:

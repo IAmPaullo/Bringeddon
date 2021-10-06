@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.4964149, b: 0.57482004, a: 1}
+  m_IndirectSpecularColor: {r: 0.44658005, g: 0.4964143, b: 0.57481825, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 3507757}
   m_Layer: 2
   m_Name: dado (65)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 80988429}
   m_Layer: 2
   m_Name: dado (16)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 124459521}
   m_Layer: 2
   m_Name: dado (14)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 136724167}
   m_Layer: 2
   m_Name: dado (68)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 207049600}
   m_Layer: 2
   m_Name: dado (21)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 207938029}
   m_Layer: 2
   m_Name: dado (4)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1015,7 +1015,7 @@ GameObject:
   - component: {fileID: 224694349}
   m_Layer: 2
   m_Name: dado (50)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1123,6 +1123,21 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 26997956}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: lockTime
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3625037981867865987, guid: f51df42ba00ce384492d5e45c54f7995,
         type: 3}
       propertyPath: m_RootOrder
@@ -1330,7 +1345,7 @@ GameObject:
   - component: {fileID: 257223372}
   m_Layer: 2
   m_Name: dado (3)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,7 +1661,7 @@ GameObject:
   - component: {fileID: 306676167}
   m_Layer: 2
   m_Name: dado (5)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,7 +1772,7 @@ GameObject:
   - component: {fileID: 312232769}
   m_Layer: 2
   m_Name: dado (47)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1868,7 +1883,7 @@ GameObject:
   - component: {fileID: 316241954}
   m_Layer: 2
   m_Name: dado (15)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1979,7 +1994,7 @@ GameObject:
   - component: {fileID: 318685630}
   m_Layer: 2
   m_Name: dado (33)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2090,7 +2105,7 @@ GameObject:
   - component: {fileID: 328725935}
   m_Layer: 2
   m_Name: dado (8)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2201,7 +2216,7 @@ GameObject:
   - component: {fileID: 330801913}
   m_Layer: 2
   m_Name: dado (25)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2304,6 +2319,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3017442811332161587, guid: 15cb3fc61d5773b469516a0ccc6625e2,
+        type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017442811332161587, guid: 15cb3fc61d5773b469516a0ccc6625e2,
+        type: 3}
+      propertyPath: fireRate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017442811332161587, guid: 15cb3fc61d5773b469516a0ccc6625e2,
+        type: 3}
+      propertyPath: hpManager
+      value: 
+      objectReference: {fileID: 442953194}
+    - target: {fileID: 3017442811332161587, guid: 15cb3fc61d5773b469516a0ccc6625e2,
+        type: 3}
+      propertyPath: maxHealth
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7721456429331681579, guid: 15cb3fc61d5773b469516a0ccc6625e2,
         type: 3}
       propertyPath: m_RootOrder
@@ -2411,6 +2446,66 @@ Transform:
   m_Father: {fileID: 543450653041746053}
   m_RootOrder: 144
   m_LocalEulerAnglesHint: {x: 0, y: -90.01401, z: 0}
+--- !u!1 &340208680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340208681}
+  - component: {fileID: 340208682}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &340208681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340208680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 442953198}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 77, y: -53}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &340208682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340208680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 2
+  m_ConstraintCount: 1
 --- !u!1 &360392424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +2760,121 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &442953193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442953198}
+  - component: {fileID: 442953197}
+  - component: {fileID: 442953196}
+  - component: {fileID: 442953195}
+  - component: {fileID: 442953194}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &442953194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442953193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f33e9475f0775b47bab5086c71c546d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: []
+  prefab: {fileID: 6031249736935574739, guid: 2ab06132c29cdd3418ccf8c0c454d637, type: 3}
+  holder: {fileID: 340208681}
+--- !u!114 &442953195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442953193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &442953196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442953193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &442953197
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442953193}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &442953198
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442953193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 340208681}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &456788252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,7 +2934,7 @@ GameObject:
   - component: {fileID: 457474648}
   m_Layer: 2
   m_Name: dado (10)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2864,7 +3074,7 @@ GameObject:
   - component: {fileID: 492216270}
   m_Layer: 2
   m_Name: dado (30)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2975,7 +3185,7 @@ GameObject:
   - component: {fileID: 511775679}
   m_Layer: 2
   m_Name: dado (11)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3086,7 +3296,7 @@ GameObject:
   - component: {fileID: 515132663}
   m_Layer: 2
   m_Name: dado (60)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3197,7 +3407,7 @@ GameObject:
   - component: {fileID: 541886478}
   m_Layer: 2
   m_Name: dado (40)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3333,7 +3543,7 @@ GameObject:
   - component: {fileID: 555885790}
   m_Layer: 2
   m_Name: dado (9)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3444,7 +3654,7 @@ GameObject:
   - component: {fileID: 563235703}
   m_Layer: 2
   m_Name: dado (73)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3555,7 +3765,7 @@ GameObject:
   - component: {fileID: 577391390}
   m_Layer: 2
   m_Name: dado (69)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3878,7 +4088,7 @@ GameObject:
   - component: {fileID: 636198432}
   m_Layer: 2
   m_Name: dado (77)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3989,7 +4199,7 @@ GameObject:
   - component: {fileID: 669470474}
   m_Layer: 2
   m_Name: dado (59)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4503,6 +4713,117 @@ Transform:
   m_Father: {fileID: 543450653041746053}
   m_RootOrder: 151
   m_LocalEulerAnglesHint: {x: 0, y: 27.920002, z: 0}
+--- !u!1 &804887048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804887049}
+  - component: {fileID: 804887053}
+  - component: {fileID: 804887052}
+  - component: {fileID: 804887051}
+  - component: {fileID: 804887050}
+  m_Layer: 2
+  m_Name: dado (109)
+  m_TagString: Dice
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804887049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804887048}
+  m_LocalRotation: {x: -0.48208737, y: -0.5172928, z: -0.5172928, w: 0.48208737}
+  m_LocalPosition: {x: -2.762, y: 0.804, z: 3.683}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 543450653041746053}
+  m_RootOrder: 239
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -94.035}
+--- !u!65 &804887050
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804887048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015690327, y: 0.0015581057, z: 0.0015650865}
+  m_Center: {x: -0.0000773716, y: -0.00018069145, z: -0.000080118174}
+--- !u!54 &804887051
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804887048}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &804887052
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804887048}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -4402351807265975359, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
+  - {fileID: 1255026229889276927, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &804887053
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804887048}
+  m_Mesh: {fileID: 3218005709439798841, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
 --- !u!1 &806990160
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,7 +4839,7 @@ GameObject:
   - component: {fileID: 806990162}
   m_Layer: 2
   m_Name: dado (39)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4629,7 +4950,7 @@ GameObject:
   - component: {fileID: 821951653}
   m_Layer: 2
   m_Name: dado (52)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4740,7 +5061,7 @@ GameObject:
   - component: {fileID: 829004305}
   m_Layer: 2
   m_Name: dado (55)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4851,7 +5172,7 @@ GameObject:
   - component: {fileID: 829133983}
   m_Layer: 2
   m_Name: dado (62)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5115,6 +5436,91 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32585188b1165524fb37cb0f6f7bfe47, type: 3}
+--- !u!1 &841648184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841648187}
+  - component: {fileID: 841648186}
+  - component: {fileID: 841648185}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &841648185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841648184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+--- !u!114 &841648186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841648184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &841648187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841648184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862691511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,7 +5580,7 @@ GameObject:
   - component: {fileID: 881384015}
   m_Layer: 2
   m_Name: dado (53)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5291,7 +5697,7 @@ GameObject:
   - component: {fileID: 888625650}
   m_Layer: 2
   m_Name: dado (63)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5402,7 +5808,7 @@ GameObject:
   - component: {fileID: 939700547}
   m_Layer: 2
   m_Name: dado (56)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5513,7 +5919,7 @@ GameObject:
   - component: {fileID: 946727679}
   m_Layer: 2
   m_Name: dado (20)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5624,7 +6030,7 @@ GameObject:
   - component: {fileID: 950252104}
   m_Layer: 2
   m_Name: dado (49)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5741,6 +6147,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505987717946740202, guid: 00019f13a57dc1e488b8b72e0280c087,
+        type: 3}
+      propertyPath: health
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505987717946740202, guid: 00019f13a57dc1e488b8b72e0280c087,
+        type: 3}
+      propertyPath: cooldown
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1505987717946740203, guid: 00019f13a57dc1e488b8b72e0280c087,
         type: 3}
@@ -5954,7 +6370,7 @@ GameObject:
   - component: {fileID: 967333077}
   m_Layer: 2
   m_Name: dado (76)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6065,7 +6481,7 @@ GameObject:
   - component: {fileID: 967564039}
   m_Layer: 2
   m_Name: dado (67)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6176,7 +6592,7 @@ GameObject:
   - component: {fileID: 986688382}
   m_Layer: 2
   m_Name: dado (17)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6387,7 +6803,7 @@ GameObject:
   - component: {fileID: 998372061}
   m_Layer: 2
   m_Name: dado (78)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6498,7 +6914,7 @@ GameObject:
   - component: {fileID: 1004627570}
   m_Layer: 2
   m_Name: dado (38)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6593,6 +7009,117 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004627568}
+  m_Mesh: {fileID: 3218005709439798841, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
+--- !u!1 &1017447203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017447204}
+  - component: {fileID: 1017447208}
+  - component: {fileID: 1017447207}
+  - component: {fileID: 1017447206}
+  - component: {fileID: 1017447205}
+  m_Layer: 2
+  m_Name: dado (110)
+  m_TagString: Dice
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1017447204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017447203}
+  m_LocalRotation: {x: -0.48208737, y: -0.5172928, z: -0.5172928, w: 0.48208737}
+  m_LocalPosition: {x: -2.75, y: 0.63, z: 3.61}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 543450653041746053}
+  m_RootOrder: 240
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -94.035}
+--- !u!65 &1017447205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017447203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015690327, y: 0.0015581057, z: 0.0015650865}
+  m_Center: {x: -0.0000773716, y: -0.00018069145, z: -0.000080118174}
+--- !u!54 &1017447206
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017447203}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1017447207
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017447203}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -4402351807265975359, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
+  - {fileID: 1255026229889276927, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1017447208
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017447203}
   m_Mesh: {fileID: 3218005709439798841, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
 --- !u!1 &1037344992
 GameObject:
@@ -6764,7 +7291,7 @@ GameObject:
   - component: {fileID: 1071014782}
   m_Layer: 2
   m_Name: dado (31)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6955,6 +7482,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1895193742}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1086923261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6436698642351563352, guid: f51df42ba00ce384492d5e45c54f7995,
+    type: 3}
+  m_PrefabInstance: {fileID: 228099662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1089695495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,7 +7503,7 @@ GameObject:
   - component: {fileID: 1089695497}
   m_Layer: 2
   m_Name: dado (70)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7081,7 +7614,7 @@ GameObject:
   - component: {fileID: 1099365943}
   m_Layer: 2
   m_Name: dado (36)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7302,7 +7835,7 @@ GameObject:
   - component: {fileID: 1107576825}
   m_Layer: 2
   m_Name: dado (27)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7413,7 +7946,7 @@ GameObject:
   - component: {fileID: 1107743853}
   m_Layer: 2
   m_Name: dado (46)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7524,7 +8057,7 @@ GameObject:
   - component: {fileID: 1108675499}
   m_Layer: 2
   m_Name: dado (37)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7635,7 +8168,7 @@ GameObject:
   - component: {fileID: 1119615700}
   m_Layer: 2
   m_Name: dado (45)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7746,7 +8279,7 @@ GameObject:
   - component: {fileID: 1123329827}
   m_Layer: 2
   m_Name: dado (24)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7945,7 +8478,7 @@ GameObject:
   - component: {fileID: 1149176274}
   m_Layer: 2
   m_Name: dado (28)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8130,7 +8663,7 @@ GameObject:
   - component: {fileID: 1196702722}
   m_Layer: 2
   m_Name: dado (29)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8226,6 +8759,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196702720}
   m_Mesh: {fileID: 3218005709439798841, guid: 636a8d4527ebe3c489d4dab862f82e4a, type: 3}
+--- !u!4 &1206472086 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7498198280505808873, guid: f51df42ba00ce384492d5e45c54f7995,
+    type: 3}
+  m_PrefabInstance: {fileID: 228099662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1226974209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8285,7 +8824,7 @@ GameObject:
   - component: {fileID: 1238168997}
   m_Layer: 2
   m_Name: dado (35)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8506,7 +9045,7 @@ GameObject:
   - component: {fileID: 1261357083}
   m_Layer: 2
   m_Name: dado (74)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8661,7 +9200,7 @@ GameObject:
   - component: {fileID: 1284993956}
   m_Layer: 2
   m_Name: dado (12)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8772,7 +9311,7 @@ GameObject:
   - component: {fileID: 1311790215}
   m_Layer: 2
   m_Name: dado (42)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8908,7 +9447,7 @@ GameObject:
   - component: {fileID: 1322290962}
   m_Layer: 2
   m_Name: dado (79)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9132,7 +9671,7 @@ GameObject:
   - component: {fileID: 1460129532}
   m_Layer: 2
   m_Name: dado (22)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9243,7 +9782,7 @@ GameObject:
   - component: {fileID: 1468728443}
   m_Layer: 2
   m_Name: dado (6)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9354,7 +9893,7 @@ GameObject:
   - component: {fileID: 1488200338}
   m_Layer: 2
   m_Name: dado (48)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9554,7 +10093,7 @@ GameObject:
   - component: {fileID: 1532524955}
   m_Layer: 2
   m_Name: dado (41)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9665,7 +10204,7 @@ GameObject:
   - component: {fileID: 1533429455}
   m_Layer: 2
   m_Name: dado (61)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9776,7 +10315,7 @@ GameObject:
   - component: {fileID: 1576687733}
   m_Layer: 2
   m_Name: dado (2)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9887,7 +10426,7 @@ GameObject:
   - component: {fileID: 1586314467}
   m_Layer: 2
   m_Name: dado (1)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9998,7 +10537,7 @@ GameObject:
   - component: {fileID: 1590494082}
   m_Layer: 2
   m_Name: dado (13)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10109,7 +10648,7 @@ GameObject:
   - component: {fileID: 1603619207}
   m_Layer: 2
   m_Name: dado (43)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10220,7 +10759,7 @@ GameObject:
   - component: {fileID: 1607580711}
   m_Layer: 2
   m_Name: dado (58)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10331,7 +10870,7 @@ GameObject:
   - component: {fileID: 1608868280}
   m_Layer: 2
   m_Name: dado (18)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10486,7 +11025,7 @@ GameObject:
   - component: {fileID: 1634876224}
   m_Layer: 2
   m_Name: dado (26)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10724,7 +11263,7 @@ GameObject:
   - component: {fileID: 1679228937}
   m_Layer: 2
   m_Name: dado (66)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10914,7 +11453,7 @@ GameObject:
   - component: {fileID: 1715462779}
   m_Layer: 2
   m_Name: dado (71)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11025,7 +11564,7 @@ GameObject:
   - component: {fileID: 1724006200}
   m_Layer: 2
   m_Name: dado (75)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11225,7 +11764,7 @@ GameObject:
   - component: {fileID: 1759126035}
   m_Layer: 2
   m_Name: dado (34)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11416,7 +11955,7 @@ GameObject:
   - component: {fileID: 1838493479}
   m_Layer: 2
   m_Name: dado (32)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11572,7 +12111,7 @@ GameObject:
   - component: {fileID: 1878055347}
   m_Layer: 2
   m_Name: dado (51)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11841,7 +12380,7 @@ GameObject:
   - component: {fileID: 1937366134}
   m_Layer: 2
   m_Name: dado (44)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11952,7 +12491,7 @@ GameObject:
   - component: {fileID: 1947363233}
   m_Layer: 2
   m_Name: dado (72)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12155,7 +12694,7 @@ GameObject:
   - component: {fileID: 1979972460}
   m_Layer: 2
   m_Name: dado (54)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12340,7 +12879,7 @@ GameObject:
   - component: {fileID: 2009119887}
   m_Layer: 2
   m_Name: dado (64)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12564,7 +13103,7 @@ GameObject:
   - component: {fileID: 2093109043}
   m_Layer: 2
   m_Name: dado (23)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12719,7 +13258,7 @@ GameObject:
   - component: {fileID: 2098843779}
   m_Layer: 2
   m_Name: dado (7)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12830,7 +13369,7 @@ GameObject:
   - component: {fileID: 2104695888}
   m_Layer: 2
   m_Name: dado (57)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12941,7 +13480,7 @@ GameObject:
   - component: {fileID: 2105046136}
   m_Layer: 2
   m_Name: dado (19)
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13843,6 +14382,8 @@ Transform:
   - {fileID: 636198431}
   - {fileID: 998372060}
   - {fileID: 1322290961}
+  - {fileID: 804887049}
+  - {fileID: 1017447204}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -89.996, z: 0}
@@ -15081,7 +15622,7 @@ GameObject:
   - component: {fileID: 691832702}
   m_Layer: 2
   m_Name: dado
-  m_TagString: Untagged
+  m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18169,6 +18710,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 26997956}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: beam
+      value: 
+      objectReference: {fileID: 1086923261}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: lockTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 71655506815934993, guid: f51df42ba00ce384492d5e45c54f7995,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1206472086}
     - target: {fileID: 3625037981867865987, guid: f51df42ba00ce384492d5e45c54f7995,
         type: 3}
       propertyPath: m_RootOrder
@@ -20920,6 +21491,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505987717946740202, guid: 00019f13a57dc1e488b8b72e0280c087,
+        type: 3}
+      propertyPath: health
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505987717946740202, guid: 00019f13a57dc1e488b8b72e0280c087,
+        type: 3}
+      propertyPath: cooldown
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1505987717946740203, guid: 00019f13a57dc1e488b8b72e0280c087,
         type: 3}

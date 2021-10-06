@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Ground
   - Tower
+  - Boss
   layers:
   - Default
   - TransparentFX
